@@ -1,0 +1,19 @@
+# 统一换行：仓库内存 LF，Windows 检出时按 autocrlf 转 CRLF
+* text=auto
+
+# 明确按二进制处理（避免换行转换破坏文件）
+*.lib   binary
+*.a     binary
+*.o     binary
+*.axf   binary
+*.hex   binary
+*.bin   binary
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+
+# STM32Cube 生成的 C 代码保持原样
+*.c     text
+*.h     text
+*.s     text
+*.S     text
